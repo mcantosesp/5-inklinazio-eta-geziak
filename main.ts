@@ -1,5 +1,5 @@
 basic.forever(function () {
-    if (input.isGesture(Gesture.TiltLeft)) {
+    if (input.buttonIsPressed(Button.A)) {
         basic.showArrow(ArrowNames.North)
         basic.showArrow(ArrowNames.NorthEast)
         basic.showArrow(ArrowNames.East)
@@ -9,7 +9,7 @@ basic.forever(function () {
         basic.showArrow(ArrowNames.West)
         basic.showArrow(ArrowNames.NorthWest)
     }
-    if (input.isGesture(Gesture.TiltRight)) {
+    if (input.buttonIsPressed(Button.B)) {
         basic.showArrow(ArrowNames.North)
         basic.showArrow(ArrowNames.NorthWest)
         basic.showArrow(ArrowNames.West)
